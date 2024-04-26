@@ -1,5 +1,4 @@
-<<<<<<< Updated upstream
-=======
+
 function validarNombre(nombre) {
   if (nombre.length === 0) {
     return "Este campo debe tener al menos 1 caracter";
@@ -8,8 +7,8 @@ function validarNombre(nombre) {
   if (nombre.length >= 50) {
     return "Este campo debe tener menos de 50 caracteres";
   }
-
-  if (!/^[a-z]+$/i.test(nombre)) {
+  
+if (!/^[a-z]+$/i.test(nombre)) {
     return "El campo nombre sólo acepta letras";
   }
 
@@ -33,7 +32,7 @@ function validarDescripcionRegalo(descripcionRegalo) {
     return "El campo descripcion es muy largo";
   }
 
-  if (!/^[a-z0-9 ]+$/i.test(descripcionRegalo)) {
+if (!/^[a-z0-9 ]+$/i.test(descripcionRegalo)) {
     return "El campo descripción solo puede tener números y letras";
   }
 
@@ -101,4 +100,3 @@ $form.onsubmit = validarFormulario();
 //   } else {
 //     $form.descripcionRegalo.className = "";
 //   }
->>>>>>> Stashed changes
